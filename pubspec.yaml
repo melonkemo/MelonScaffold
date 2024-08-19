@@ -1,0 +1,39 @@
+name: melon_scaffold
+description: "Melon Scaffold"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  web: ^1.0.0
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.melonkemo.melon_scaffold
+        pluginClass: MelonScaffoldPlugin
+      ios:
+        pluginClass: MelonScaffoldPlugin
+      linux:
+        pluginClass: MelonScaffoldPlugin
+      macos:
+        pluginClass: MelonScaffoldPlugin
+      windows:
+        pluginClass: MelonScaffoldPluginCApi
+      web:
+        pluginClass: MelonScaffoldWeb
+        fileName: melon_scaffold_web.dart
